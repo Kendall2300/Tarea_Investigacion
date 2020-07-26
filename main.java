@@ -24,7 +24,7 @@ public class main{
 			if(/* Ingrese aqui la variable obtenida de la entrada*/!=/* Aqui el numero que escogio para decir que es arctan*/  ){
 				System.out.print("Ingrese el valor en Grados");
 				double angulo_arctan=entrada.nextDouble();
-				double resultado_arctan=Math.asin(angulo_arctan);
+				double resultado_arctan=Math.atan(angulo_arctan);
 				System.out.print("El arco tangente de: " + angulo_arctan + " es: " + resultado_arctan);
 			}
 		}
