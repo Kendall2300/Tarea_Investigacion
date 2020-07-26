@@ -7,23 +7,39 @@ public class main{
             para que funcione correctamente, le puse en comentado mas o menos lo que hay que escribir
             si considera necesario hacer paso de radianes a grados use el "Math.toDegrees(aqui la variable)"
             */
+
+            System.out.println("Ingrese el numero que es respectivo a la operacion trigonometrica que desee:");
+            System.out.println("1. seno (sin)");
+            System.out.println("2. coseno (cos)");
+            System.out.println("3. tangente (tan)");
+            System.out.println("4. operacion inversa sobre seno (arcsin)");
+            System.out.println("5. operacion inversa sobre coseno (arccos)");
+            System.out.println("6. operacion inversa sobre tangente (arctan)");
+            System.out.println("7. operacion hiperbolica sobre seno (sinh)");
+            System.out.println("8. operacion hiperbolica sobre coseno (cosh)");
+            System.out.println("9. operacion hiperbolica sobre tangente (tanh)");
+
+
+            int op_trigonom = myObj.nextLine();
+
             //Seno hiperbolico
             
-            if(/* Ingrese aqui la variable obtenida de la entrada*/!=/* Aqui el numero que escogio para decir que es sinh*/  ){
+            if(op_trigonom == 7 ){
+
                 System.out.print("Ingrese el valor en grados");
-                double angulo_sinh=entrada.nextDouble();
-                double resultado_sinh=Math.sinh(angulo_sinh);
+                double angulo_sinh = entrada.nextDouble();
+                double resultado_sinh = Math.sinh(angulo_sinh);
                 System.out.println("El seno hiperbolico de: "+angulo_sinh+" es: "+resultado_sinh);
             }
             //Coseno hiperbolico
-            if (/* Ingrese aqui la variable obtenida de la entrada*/!=/* Aqui el numero que escogio para decir que es cosh*/){
+            if (op_trigonom== 8){
                 System.out.print("Ingrese el valor en grados");
                 double angulo_cosh=entrada.nextDouble();
                 double resultado_cosh=Math.cosh(angulo_cosh);
                 System.out.println("El coseno hiperbolico de: "+angulo_cosh+" es: "+resultado_cosh);
             }
             //Tangente hiperbolica
-            if (/* Ingrese aqui la variable obtenida de la entrada*/!=/* Aqui el numero que escogio para decir que es tanh*/){
+            if (op_trigonom== 9){
                 System.out.print("Ingrese el valor en grados");
                 double angulo_tanh=entrada.nextDouble();
                 double resultado_tanh=Math.tanh(angulo_tanh);
