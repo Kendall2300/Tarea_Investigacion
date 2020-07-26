@@ -1,0 +1,4 @@
+Kendall: Funciones hiperbolicas
+Alejandro: Funciones basicas
+Gustavo: Funciones inversas
+Daniel: Inputs/Entradas
