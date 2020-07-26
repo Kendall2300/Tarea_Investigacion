@@ -1,12 +1,7 @@
 import java.util.Scanner;
-public class main{
+public class main {
 	public static void main(String[] args) {
-            Scanner entrada=new Scanner(System.in);
-            /*Men tiene que agarrar esto, cada if esta separado por comentarios. 
-            Hice una variable especifica para cada uno, hay que terminar las condiciones
-            para que funcione correctamente, le puse en comentado mas o menos lo que hay que escribir
-            si considera necesario hacer paso de radianes a grados use el "Math.toDegrees(aqui la variable)"
-            */
+            Scanner entrada = new Scanner(System.in);
 
             System.out.println("Ingrese el numero que es respectivo a la operacion trigonometrica que desee:");
             System.out.println("1. seno (sin)");
@@ -20,10 +15,9 @@ public class main{
             System.out.println("9. operacion hiperbolica sobre tangente (tanh)");
 
 
-            int op_trigonom = myObj.nextLine();
+            int op_trigonom = entrada.nextInt();
 
             //Seno hiperbolico
-            
             if(op_trigonom == 7 ){
 
                 System.out.print("Ingrese el valor en grados");
@@ -45,5 +39,27 @@ public class main{
                 double resultado_tanh=Math.tanh(angulo_tanh);
                 System.out.println("La tangente hiperbolica de: "+angulo_tanh+" es: "+resultado_tanh);
             }
-	}
-}
+            //arc seno
+            if(op_trigonom== 4  ){
+                System.out.print("Ingrese el valor en Grados");
+                double angulo_arcsin=entrada.nextDouble();
+                double resultado_arcsin=Math.asin(angulo_arcsin);
+                System.out.print("El arco seno de: " + angulo_arcsin + " es: " + resultado_arcsin);
+            }
+
+            //arco coseno
+            if(op_trigonom==5  ){
+                System.out.print("Ingrese el valor en Grados");
+                double angulo_arccos=entrada.nextDouble();
+                double resultado_arccos=Math.acos(angulo_arccos);
+                System.out.print("El arco coseno de: " + angulo_arccos + " es: " + resultado_arccos);
+            }
+
+            //arco tangente
+            if(op_trigonom==6  ){
+                System.out.print("Ingrese el valor en Grados");
+                double angulo_arctan=entrada.nextDouble();
+                double resultado_arctan=Math.atan(angulo_arctan);
+                System.out.print("El arco tangente de: " + angulo_arctan + " es: " + resultado_arctan);
+            }
+	}}
