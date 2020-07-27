@@ -1,27 +1,31 @@
 import java.util.Scanner;
+public class main{
+		public static void main (String[] args) {
+			Scanner entrada=new Scanner(System.in);
 
 
-public class FuncionSCT {
+			//seno
+			if(/* Ingrese aqui la variable obtenida de la entrada*/!=/* Aqui el numero que escogio para decir que es sin*/  ){
+				System.out.print("Ingrese el valor en Grados");
+				double angulo_sin=entrada.nextDouble();
+				double resultado_sin=Math.sin(angulo_sin);
+				System.out.print("El seno de: " + angulo_sin + " es: " + resultado_sin);
+			}
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        double a;
-        Scanner num = new Scanner(System.in);
-        try {
-            System.out.print("Introduce un ángulo de (0...360°): ");
-            a = num.nextDouble();
-            anguloCal(a);
-        } catch (Exception e) {
-            System.out.println("ERROR: Datos incorrectos.");
-        }
-    }
-    static void anguloCal(double a){
-        
-        double b = Math.toRadians(a);
-        System.out.println("Seno de " + a + " es: " + Math.sin(b) );
-        System.out.println("Coseno de " + a + " es: " + Math.cos(b) );
-        System.out.println("Tangente de " + a + " es: " + Math.tan(b) );
-    }
+			//coseno
+			if(/* Ingrese aqui la variable obtenida de la entrada*/!=/* Aqui el numero que escogio para decir que es cos*/  ){
+				System.out.print("Ingrese el valor en Grados");
+				double angulo_cos=entrada.nextDouble();
+				double resultado_cos=Math.cos(angulo_cos);
+				System.out.print("El coseno de: " + angulo_cos + " es: " + resultado_cos);
+			}
+
+			//]tangente
+			if(/* Ingrese aqui la variable obtenida de la entrada*/!=/* Aqui el numero que escogio para decir que es tan*/  ){
+				System.out.print("Ingrese el valor en Grados");
+				double angulo_tan=entrada.nextDouble();
+				double resultado_tan=Math.tan(angulo_tan);
+				System.out.print("El tangente de: " + angulo_tan + " es: " + resultado_tan);
+			}
+		}
 }
