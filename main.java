@@ -62,4 +62,27 @@ public class main {
                 double resultado_arctan=Math.atan(angulo_arctan);
                 System.out.print("El arco tangente de: " + angulo_arctan + " es: " + resultado_arctan);
             }
+            //seno
+			if(op_trigonom==1   ){
+				System.out.print("Ingrese el valor en Grados");
+				double angulo_sin=entrada.nextDouble();
+				double resultado_sin=Math.sin(angulo_sin);
+				System.out.print("El seno de: " + angulo_sin + " es: " + resultado_sin);
+			}
+
+			//coseno
+			if(op_trigonom==2  ){
+				System.out.print("Ingrese el valor en Grados");
+				double angulo_cos=entrada.nextDouble();
+				double resultado_cos=Math.cos(angulo_cos);
+				System.out.print("El coseno de: " + angulo_cos + " es: " + resultado_cos);
+			}
+
+			//]tangente
+			if(op_trigonom==3  ){
+				System.out.print("Ingrese el valor en Grados");
+				double angulo_tan=entrada.nextDouble();
+				double resultado_tan=Math.tan(angulo_tan);
+				System.out.print("El tangente de: " + angulo_tan + " es: " + resultado_tan);
+			}
 	}}
